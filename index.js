@@ -21,10 +21,10 @@ const io = new Server(http, { cors: { origin: "http://localhost:4200" } });
 
  const Connection = mysql.createConnection({
     port: "3306",
-    host: "localhost",
-    user: "root",
-    password: "admin1615",
-    database: "programinglanguagecourses"
+    host: "bgjx071eqchw98a1ogig-mysql.services.clever-cloud.com",
+    user: "uedq7trjza8dnnkn",
+    password: "uedq7trjza8dnnkn",
+    database: "bgjx071eqchw98a1ogig"
 });
 
 //------------------data get from database -----------------
