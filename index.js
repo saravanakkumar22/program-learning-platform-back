@@ -23,8 +23,17 @@ const io = new Server(http, { cors: { origin: "http://localhost:4200" } });
     port: "3306",
     host: "bgjx071eqchw98a1ogig-mysql.services.clever-cloud.com",
     user: "uedq7trjza8dnnkn",
-    password: "uedq7trjza8dnnkn",
+    password: "1OLbbNTEtV2q9KTxKfYu",
     database: "bgjx071eqchw98a1ogig"
+});
+
+Connection.connect((err) => {
+    if(err){
+        console.error('Error connecting: ' + err.stack);
+        return;
+      }
+      console.log('Connected as id ' + Connection.threadId);
+    
 });
 
 //------------------data get from database -----------------
